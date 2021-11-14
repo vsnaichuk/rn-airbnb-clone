@@ -1,10 +1,11 @@
 import React from 'react';
 import type { Node } from 'react';
 import Home from './src/screens/Home/Home';
-import Post from './src/components/Post/Post';
+import Room from './src/components/Room/Room';
+import RoomsOverview from './src/screens/RoomsOverview/RoomsOverview';
 
 const App: () => Node = () => {
-  return <Post />;
+  return <RoomsOverview />;
 };
 
 export default App;
