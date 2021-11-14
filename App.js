@@ -1,22 +1,10 @@
 import React from 'react';
-import type {Node} from 'react';
-import {
-  SafeAreaView,
-  ScrollView,
-  StatusBar,
-  StyleSheet,
-  Text,
-  useColorScheme,
-  View,
-} from 'react-native';
-
-import Entypo from 'react-native-vector-icons/Entypo';
+import type { Node } from 'react';
 import Home from './src/screens/Home/Home';
+import Post from './src/components/Post/Post';
 
 const App: () => Node = () => {
-  return <Home />;
+  return <Post />;
 };
-
-const styles = StyleSheet.create({});
 
 export default App;
