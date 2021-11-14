@@ -5,7 +5,8 @@ import s from './styles';
 const Room = ({ room }) => {
   const {
     image,
-    description,
+    type,
+    title,
     bed,
     bedroom,
     oldPrice,
@@ -26,8 +27,8 @@ const Room = ({ room }) => {
         {bed} bed {bedroom} bedroom
       </Text>
 
-      <Text style={s.description}>
-        {description.slice(0, 250).concat('...')}
+      <Text style={s.description} numberOfLines={2}>
+        {type}. {title}
       </Text>
 
       <Text style={s.prices}>
