@@ -9,13 +9,12 @@ const styles = StyleSheet.create({
   },
   title: {
     fontSize: 80,
-    fontWeight: 'bold',
+    fontFamily: 'Raleway-Bold',
     color: 'white',
     width: '70%',
     marginLeft: 25,
   },
   button: {
-    backgroundColor: '#fff',
     width: 200,
     height: 40,
     borderRadius: 10,
@@ -26,7 +25,7 @@ const styles = StyleSheet.create({
   },
   buttonText: {
     fontSize: 16,
-    fontWeight: 'bold',
+    fontFamily: 'Raleway-Bold',
   },
   searchButton: {
     zIndex: 100,
@@ -36,7 +35,6 @@ const styles = StyleSheet.create({
     height: 60,
     width: Dimensions.get('screen').width - 20,
     marginLeft: 10,
-    backgroundColor: '#fff',
     borderRadius: 30,
     flexDirection: 'row',
     justifyContent: 'center',
@@ -44,7 +42,7 @@ const styles = StyleSheet.create({
   },
   searchText: {
     fontSize: 16,
-    fontWeight: 'bold',
+    fontFamily: 'Raleway-Bold',
   },
 });
 

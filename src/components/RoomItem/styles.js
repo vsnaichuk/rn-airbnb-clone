@@ -26,7 +26,7 @@ const styles = StyleSheet.create({
     textDecorationLine: 'line-through',
   },
   price: {
-    fontWeight: 'bold',
+    fontFamily: 'Raleway-Bold',
   },
   totalPrice: {
     marginTop: 5,

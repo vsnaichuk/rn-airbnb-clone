@@ -1,16 +1,16 @@
 import React from 'react';
 import { FlatList } from 'react-native';
-import Room from '../../components/Room/Room';
+import RoomItem from '../../components/RoomItem/RoomItem';
 import rooms from '../../assets/data/rooms';
 
-const RoomsOverview = () => {
+const RoomsSearch = () => {
   return (
     <FlatList
       data={rooms}
-      renderItem={({ item }) => <Room room={item} />}
+      renderItem={({ item }) => <RoomItem room={item} />}
       keyExtractor={(item) => item.id}
     />
   );
 };
 
-export default RoomsOverview;
+export default RoomsSearch;

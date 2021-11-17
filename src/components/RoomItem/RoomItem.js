@@ -1,8 +1,9 @@
 import React from 'react';
-import { Image, ScrollView, Text, View } from 'react-native';
+import { Image } from 'react-native';
 import s from './styles';
+import { Text, View } from '../Themed';
 
-const Room = ({ room }) => {
+const RoomItem = ({ room }) => {
   const {
     image,
     type,
@@ -15,7 +16,7 @@ const Room = ({ room }) => {
   } = room;
 
   return (
-    <ScrollView style={s.container}>
+    <View style={s.container}>
       <Image
         style={s.image}
         source={{
@@ -41,8 +42,8 @@ const Room = ({ room }) => {
       </Text>
 
       <Text style={s.totalPrice}>${totalPrice} total</Text>
-    </ScrollView>
+    </View>
   );
 };
 
-export default Room;
+export default RoomItem;

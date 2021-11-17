@@ -1,13 +1,24 @@
 import React from 'react';
-import { ImageBackground, Pressable, Text, View } from 'react-native';
+import {
+  ImageBackground,
+  Pressable,
+  useColorScheme,
+} from 'react-native';
 import s from './styles';
 import Fontisto from 'react-native-vector-icons/Fontisto';
+import { View, Text } from '../../components/Themed';
+import Colors from '../../constants/Colors';
 
 const Home = () => {
+  const colorScheme = useColorScheme();
+
   return (
     <View style={s.container}>
       <Pressable
-        style={s.searchButton}
+        style={[
+          s.searchButton,
+          { backgroundColor: Colors[colorScheme].background },
+        ]}
         onPress={() => console.warn('search pressed!')}
       >
         <Fontisto name="search" size={25} color="#f15425" />
@@ -24,7 +35,10 @@ const Home = () => {
         </Text>
 
         <Pressable
-          style={s.button}
+          style={[
+            s.button,
+            { backgroundColor: Colors[colorScheme].background },
+          ]}
           onPress={() => console.warn('explore button clicked!')}
         >
           <Text style={s.buttonText}>Explore nearby stays</Text>
