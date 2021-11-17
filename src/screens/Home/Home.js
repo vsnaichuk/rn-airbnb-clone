@@ -9,7 +9,7 @@ import Fontisto from 'react-native-vector-icons/Fontisto';
 import { View, Text } from '../../components/Themed';
 import Colors from '../../constants/Colors';
 
-const Home = () => {
+const Home = ({ navigation }) => {
   const colorScheme = useColorScheme();
 
   return (
@@ -19,7 +19,7 @@ const Home = () => {
           s.searchButton,
           { backgroundColor: Colors[colorScheme].background },
         ]}
-        onPress={() => console.warn('search pressed!')}
+        onPress={() => navigation.navigate('RoomsSearch')}
       >
         <Fontisto name="search" size={25} color="#f15425" />
         <Text style={s.searchText}>Where are you going?</Text>
