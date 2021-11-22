@@ -9,6 +9,7 @@ import FontAwesome from 'react-native-vector-icons/FontAwesome';
 import FontAwesome5 from 'react-native-vector-icons/FontAwesome5';
 import EvilIcons from 'react-native-vector-icons/EvilIcons';
 import RoomsSearch from '../screens/RoomsSearch/RoomsSearch';
+import Map from '../screens/Map/Map';
 
 const BottomTab = createBottomTabNavigator();
 
@@ -28,7 +29,7 @@ export default function BottomTabNavigator() {
         component={ExploreStackNavigator}
         options={({ navigation }) => ({
           tabBarIcon: ({ color }) => (
-            <Fontisto name="search" size={25} color={color} />
+            <Fontisto name="search" size={24} color={color} />
           ),
         })}
       />
@@ -37,7 +38,7 @@ export default function BottomTabNavigator() {
         component={Home} //TODO Implement SavedNavigator
         options={{
           tabBarIcon: ({ color }) => (
-            <FontAwesome name="heart-o" size={25} color={color} />
+            <FontAwesome name="heart-o" size={24} color={color} />
           ),
         }}
       />
@@ -55,7 +56,16 @@ export default function BottomTabNavigator() {
         component={Home} //TODO Implement ProfileNavigator
         options={{
           tabBarIcon: ({ color }) => (
-            <EvilIcons name="user" size={25} color={color} />
+            <FontAwesome5 name="user" size={24} color={color} />
+          ),
+        }}
+      />
+      <BottomTab.Screen
+        name="Map"
+        component={Map} //TODO Implement ProfileNavigator
+        options={{
+          tabBarIcon: ({ color }) => (
+            <FontAwesome5 name="map" size={24} color={color} />
           ),
         }}
       />
