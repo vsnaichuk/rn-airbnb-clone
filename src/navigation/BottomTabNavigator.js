@@ -75,8 +75,16 @@ export default function BottomTabNavigator() {
 
 const ExploreStack = createNativeStackNavigator();
 function ExploreStackNavigator() {
+  const colorScheme = useColorScheme();
+
   return (
-    <ExploreStack.Navigator>
+    <ExploreStack.Navigator
+      screenOptions={{
+        contentStyle: {
+          backgroundColor: Colors[colorScheme].background,
+        },
+      }}
+    >
       <ExploreStack.Screen
         name="Welcome"
         component={Home}

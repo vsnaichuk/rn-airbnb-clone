@@ -59,8 +59,8 @@ const Map = () => {
       provider={PROVIDER_GOOGLE}
       style={s.map}
       region={{
-        latitude: location?.latitude || 57.709127,
-        longitude: location?.longitude || 11.934746,
+        latitude: location?.latitude ?? 57.709127,
+        longitude: location?.longitude ?? 11.934746,
         latitudeDelta: 0.0922,
         longitudeDelta: 0.0421,
       }}

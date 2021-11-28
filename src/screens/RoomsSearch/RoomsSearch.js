@@ -7,13 +7,13 @@ import { View } from '../../components/Themed';
 
 const RoomsSearch = () => {
   return (
-    <View style={s.container}>
-      <FlatList
-        data={rooms}
-        renderItem={({ item }) => <RoomItem room={item} />}
-        keyExtractor={(item) => item.id}
-      />
-    </View>
+    // <View style={s.container}>
+    <FlatList
+      data={rooms}
+      renderItem={({ item }) => <RoomItem room={item} />}
+      keyExtractor={(item) => item.id}
+    />
+    // </View>
   );
 };
 
