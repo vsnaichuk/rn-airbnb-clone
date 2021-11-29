@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "serviceConfiguration": {
+    "apiName": "rnairbnb",
+    "serviceName": "AppSync",
+    "gqlSchemaPath": "/home/v-sn/Dev/OwnProjects/rn_airbnb/amplify/backend/api/rnairbnb/schema.graphql",
+    "defaultAuthType": {
+      "mode": "API_KEY",
+      "expirationTime": 7
+    }
+  }
+}

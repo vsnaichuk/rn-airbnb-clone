@@ -1,0 +1,15 @@
+projects:
+  rnairbnb:
+    schemaPath: home/v-sn/Dev/OwnProjects/rn_airbnb/graphql/schema.json
+    includes:
+      - src/graphql/**/*.js
+    excludes:
+      - ./amplify/**
+    extensions:
+      amplify:
+        codeGenTarget: javascript
+        generatedFileName: ''
+        docsFilePath: src/graphql
+extensions:
+  amplify:
+    version: 3

@@ -1,15 +1,15 @@
 {
   "dev": {
     "awscloudformation": {
-      "AuthRoleName": "amplify-rnairbnb-dev-15743-authRole",
-      "UnauthRoleArn": "arn:aws:iam::511612172088:role/amplify-rnairbnb-dev-15743-unauthRole",
-      "AuthRoleArn": "arn:aws:iam::511612172088:role/amplify-rnairbnb-dev-15743-authRole",
+      "AuthRoleName": "amplify-rnairbnb-dev-212017-authRole",
+      "UnauthRoleArn": "arn:aws:iam::511612172088:role/amplify-rnairbnb-dev-212017-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::511612172088:role/amplify-rnairbnb-dev-212017-authRole",
       "Region": "eu-west-1",
-      "DeploymentBucketName": "amplify-rnairbnb-dev-15743-deployment",
-      "UnauthRoleName": "amplify-rnairbnb-dev-15743-unauthRole",
-      "StackName": "amplify-rnairbnb-dev-15743",
-      "StackId": "arn:aws:cloudformation:eu-west-1:511612172088:stack/amplify-rnairbnb-dev-15743/d16274a0-4fdd-11ec-80a9-02fc82b87637",
-      "AmplifyAppId": "du7m34f0sy7ww"
+      "DeploymentBucketName": "amplify-rnairbnb-dev-212017-deployment",
+      "UnauthRoleName": "amplify-rnairbnb-dev-212017-unauthRole",
+      "StackName": "amplify-rnairbnb-dev-212017",
+      "StackId": "arn:aws:cloudformation:eu-west-1:511612172088:stack/amplify-rnairbnb-dev-212017/3a38ce00-5080-11ec-81aa-0ab9b8c72277",
+      "AmplifyAppId": "d1r3xntdqbwn76"
     }
   }
 }

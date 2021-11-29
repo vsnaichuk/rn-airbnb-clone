@@ -4,16 +4,8 @@ import s from './styles';
 import { Text, View } from '../Themed';
 
 const RoomItem = ({ room }) => {
-  const {
-    image,
-    type,
-    title,
-    bed,
-    bedroom,
-    oldPrice,
-    newPrice,
-    totalPrice,
-  } = room;
+  const { image, type, title, bed, bedroom, oldPrice, newPrice } =
+    room;
 
   return (
     <View style={s.container}>
@@ -41,7 +33,7 @@ const RoomItem = ({ room }) => {
         / night
       </Text>
 
-      <Text style={s.totalPrice}>${totalPrice} total</Text>
+      <Text style={s.totalPrice}>${newPrice * 7} total</Text>
     </View>
   );
 };

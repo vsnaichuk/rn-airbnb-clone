@@ -1,20 +1,29 @@
-import React from 'react';
-import { FlatList } from 'react-native';
+import React, { useEffect } from 'react';
+import { observer } from 'mobx-react-lite';
+import { ActivityIndicator, FlatList } from 'react-native';
 import RoomItem from '../../components/RoomItem/RoomItem';
-import rooms from '../../assets/data/rooms';
-import s from './styles';
-import { View } from '../../components/Themed';
+import { useRooms } from '../../store/rooms/useRooms';
+import Colors from '../../constants/Colors';
+// import s from './styles';
 
-const RoomsSearch = () => {
+const RoomsSearch = observer(() => {
+  const { rooms, fetchRooms, isLoading } = useRooms();
+
+  useEffect(() => {
+    fetchRooms();
+  }, [rooms]);
+
+  if (isLoading) {
+    return <ActivityIndicator size="large" />;
+  }
+
   return (
-    // <View style={s.container}>
     <FlatList
       data={rooms}
       renderItem={({ item }) => <RoomItem room={item} />}
       keyExtractor={(item) => item.id}
     />
-    // </View>
   );
-};
+});
 
 export default RoomsSearch;
